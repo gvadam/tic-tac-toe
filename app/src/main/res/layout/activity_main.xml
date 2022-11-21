@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/player_1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/player1PtDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="@string/zero"
+            android:textSize="20sp" />
+
+        <View
+            android:background="@color/black"
+            android:layout_gravity="center"
+            android:layout_width="6dp"
+            android:layout_height="2dp"/>
+
+        <TextView
+            android:id="@+id/player2PtDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="@string/zero"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/player_2"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="160dp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginEnd="10dp"
+            tools:text="@string/X"
+            tools:textColor="@color/yellow"
+            android:textSize="50sp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginEnd="10dp"
+            tools:text="@string/O"
+            tools:textColor="@color/aqua"
+            android:textSize="50sp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="50sp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="160dp">
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="50sp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="50sp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="50sp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="160dp">
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="50sp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="50sp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="50sp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/restartBtn"
+            android:layout_gravity="center"
+            android:text="@string/restart_game"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/light_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/newGameBtn"
+            android:layout_gravity="center"
+            android:text="@string/next_round"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_margin="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/light_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
